@@ -1,6 +1,8 @@
 .form {
   max-width: 300px;
-  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 10px;
 
   width: 100%;
 }

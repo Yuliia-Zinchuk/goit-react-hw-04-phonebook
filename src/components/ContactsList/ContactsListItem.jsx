@@ -3,7 +3,7 @@ import css from './ContactsList.module.css';
 
 export const ContactsListItem = ({ name, number, onDeleteContact }) => (
   <>
-    <p>
+    <p className={css.contactNumber}>
       {name}: {number}
     </p>
     <button className={css.btn} onClick={onDeleteContact} type="button">

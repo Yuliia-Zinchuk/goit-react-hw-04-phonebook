@@ -1,24 +1,22 @@
-.contacts_wraper {
-  max-width: 450px;
-}
-
-.contacts_list {
-  padding-left: 100px;
+.contactsList {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
   font-weight: 400;
   font-size: 20px;
-  list-style-type: disc;
-  list-style-position: inside;
+  max-width: 300px;
 }
 
-ul {
-  list-style-type: disc;
-  list-style-position: inside;
-}
 .contactItem {
   display: flex;
-  gap: 15px;
+
   align-items: center;
   justify-content: space-between;
+}
+
+.contactNumber {
+  margin: 0;
+  padding: 10px 5px;
 }
 .btn {
   display: block;

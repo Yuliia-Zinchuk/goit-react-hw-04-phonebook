@@ -4,25 +4,25 @@ import css from './ContactsList.module.css';
 export const ContactsList = ({ contacts, filter, onDeleteContact }) => {
   return (
     <>
-      <div className={css.contacts_wraper}>
-        <ul className={css.contacts_list}>
-          {contacts
-            .filter(({ name }) =>
-              name.toLowerCase().includes(filter.toLowerCase())
-            )
-            .map(({ id, name, number }) => (
-              <li className={css.contactItem} key={id}>
-                <ContactsListItem
-                  name={name}
-                  number={number}
-                  onDeleteContact={() => {
-                    onDeleteContact(id);
-                  }}
-                />
-              </li>
-            ))}
-        </ul>
-      </div>
+      {/* <div className={css.contacts_wraper}> */}
+      <ul className={css.contactsList}>
+        {contacts
+          .filter(({ name }) =>
+            name.toLowerCase().includes(filter.toLowerCase())
+          )
+          .map(({ id, name, number }) => (
+            <li className={css.contactItem} key={id}>
+              <ContactsListItem
+                name={name}
+                number={number}
+                onDeleteContact={() => {
+                  onDeleteContact(id);
+                }}
+              />
+            </li>
+          ))}
+      </ul>
+      {/* </div> */}
     </>
   );
 };

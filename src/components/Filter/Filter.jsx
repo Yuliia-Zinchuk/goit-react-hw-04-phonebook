@@ -5,7 +5,7 @@ export const Filter = ({ handleChange }) => {
   return (
     <>
       <label className={css.inputForm}>
-        <span className={css.labelInput}>FIND CONTACTS BY NAME</span>
+        <span className={css.labelInput}>Find contacts by name</span>
         <input
           className={css.input}
           onChange={handleChange}
